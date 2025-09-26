@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracia hacia la Paz</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Democracia hacia la Paz</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#personajes">Líderes</a></li>
+                <li><a href="#propuestas">Propuestas</a></li>
+                <li><a href="#registro">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Democracia hacia la Paz</h1>
+            <p>Unidos por la inclusión, la justicia y el progreso de Colombia</p>
+            <a href="#registro" class="cta-button">Únete al Movimiento</a>
+        </div>
+    </section>
+
+    <!-- Personajes Históricos -->
+    <section id="personajes" class="personajes-section">
+        <div class="container">
+            <h2 class="section-title">Inspirados por Grandes Líderes</h2>
+            <div class="carousel-container">
+                <!-- Flechas de navegación -->
+                <button class="carousel-arrow prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-arrow next" onclick="nextSlide()">&#10095;</button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators" id="indicators"></div>
+                
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide">
+                        <div class="personaje-card">
+                            <div class="personaje-image">
+                                <img src="https://babel.banrepcultural.org/digital/api/singleitem/image/hernan-diaz/681/default.jpg" alt="Jaime Garzón">
+                            </div>
+                            <h3 class="personaje-name">Jaime Garzón</h3>
+                            <p class="personaje-description">Periodista, comediante y defensor de los derechos humanos. Su legado nos inspira a construir un país más justo y tolerante.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="personaje-card">
+                            <div class="personaje-image">
+                                <img src="https://www.lifeder.com/wp-content/uploads/2018/11/Jorge-Eliecer-Gaitan.jpg" alt="Jorge Eliécer Gaitán">
+                            </div>
+                            <h3 class="personaje-name">Jorge Eliécer Gaitán</h3>
+                            <p class="personaje-description">Líder político que defendió los derechos del pueblo. Su visión de justicia social sigue siendo nuestra guía.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="personaje-card">
+                            <div class="personaje-image">
+                                <img src="https://revistadiners.com.co/wp-content/uploads/2023/08/portada_santander_1200x800_2024.jpg" alt="Francisco de Paula Santander">
+                            </div>
+                            <h3 class="personaje-name">Francisco de Paula Santander</h3>
+                            <p class="personaje-description">"El Hombre de las Leyes", promotor de la educación y la institucionalidad democrática en Colombia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuestas -->
+    <section id="propuestas" class="propuestas">
+        <div class="container">
+            <h2 class="section-title">Nuestras Propuestas</h2>
+            <div class="propuestas-grid">
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">🤝</div>
+                    <h3>Inclusión Total</h3>
+                    <p>Rechazamos toda forma de discriminación. Creemos en una Colombia donde todas las comunidades tengan voz y voto, sin distinción de raza, género, orientación sexual o creencia.</p>
+                </div>
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">☮️</div>
+                    <h3>Construcción de Paz</h3>
+                    <p>Promovemos el diálogo y la reconciliación como herramientas fundamentales para construir una paz duradera y sostenible en todo el territorio nacional.</p>
+                </div>
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">⚖️</div>
+                    <h3>Justicia Social</h3>
+                    <p>Luchamos por la reducción de la desigualdad, el acceso universal a servicios básicos y la creación de oportunidades para todos los colombianos.</p>
+                </div>
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">🏛️</div>
+                    <h3>Transparencia Democrática</h3>
+                    <p>Defendemos instituciones fuertes, transparentes y al servicio del pueblo. La corrupción no tiene cabida en nuestro proyecto político.</p>
+                </div>
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">🌱</div>
+                    <h3>Desarrollo Sostenible</h3>
+                    <p>Impulsamos un crecimiento económico que respete el medio ambiente y garantice un futuro próspero para las próximas generaciones.</p>
+                </div>
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">🎓</div>
+                    <h3>Educación para Todos</h3>
+                    <p>La educación de calidad es un derecho fundamental. Invertiremos en formar ciudadanos críticos, creativos y comprometidos con la democracia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registro -->
+    <section id="registro" class="registro">
+        <div class="container">
+            <h2 class="section-title">Únete a Democracia hacia la Paz</h2>
+            <form class="registro-form" id="registroForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Número de contacto">
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="¿De qué ciudad eres?">
+                </div>
+                <div class="form-group">
+                    <label for="motivacion">¿Por qué quieres unirte?</label>
+                    <textarea id="motivacion" name="motivacion" rows="4" placeholder="Cuéntanos tu motivación para ser parte del cambio..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Registrarme al Partido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Democracia hacia la Paz. Todos los derechos reservados.</p>
+            <p>Construyendo un futuro de unidad, justicia y paz para Colombia</p>
+        </div>
+    </footer>
+</body>
+</html>

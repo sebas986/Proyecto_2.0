@@ -6,14 +6,21 @@
     <title>Democracia hacia la Paz</title>
     <link rel="stylesheet" href="Style.css">
     <script src="Script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <div class="logo">Democracia hacia la Paz</div>
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="Imagen.jpg" alt="Logo Democracia hacia la Paz">
+                </div>
+                <div class="logo">Democracia hacia la Paz</div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#principios">Principios</a></li>
                 <li><a href="#personajes">Líderes</a></li>
                 <li><a href="#propuestas">Propuestas</a></li>
                 <li><a href="#registro">Únete</a></li>
@@ -25,9 +32,43 @@
     <section id="inicio" class="hero">
         <div class="hero-background"></div>
         <div class="hero-content">
-            <h1>Democracia hacia la Paz</h1>
+            <div class="hero-logo-container">
+                <div class="hero-logo">
+                    <img src="Imagen.jpg" alt="Logo Democracia hacia la Paz">
+                </div>
+                <h1>Democracia hacia la Paz</h1>
+            </div>
             <p>Unidos por la inclusión, la justicia y el progreso de Colombia</p>
             <a href="#registro" class="cta-button">Únete al Movimiento</a>
+        </div>
+    </section>
+
+    <!-- Principios Fundamentales -->
+    <section id="principios" class="principios-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Principios Fundamentales</h2>
+            <div class="principios-grid">
+                <div class="principio-card">
+                    <i class="fas fa-vote-yea principio-icon"></i>
+                    <h3>Democracia</h3>
+                    <p>Participación ciudadana y decisiones transparentes. Creemos en un sistema donde cada voz cuenta y cada decisión se toma con transparencia y responsabilidad.</p>
+                </div>
+                <div class="principio-card">
+                    <i class="fas fa-balance-scale principio-icon"></i>
+                    <h3>Igualdad</h3>
+                    <p>Mismos derechos y oportunidades para todos. Trabajamos por una sociedad donde nadie sea discriminado y todos tengan las mismas posibilidades de desarrollo.</p>
+                </div>
+                <div class="principio-card">
+                    <i class="fas fa-hands-helping principio-icon"></i>
+                    <h3>Justicia Social</h3>
+                    <p>Defensa de los derechos humanos y equidad. Promovemos la distribución justa de recursos y oportunidades para construir una sociedad más equitativa.</p>
+                </div>
+                <div class="principio-card">
+                    <i class="fas fa-users principio-icon"></i>
+                    <h3>Soberanía Popular</h3>
+                    <p>El poder nace del pueblo. Reconocemos que la verdadera autoridad reside en los ciudadanos, quienes deben ser los protagonistas de su propio destino.</p>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -111,7 +111,7 @@
         }, observerOptions);
 
         // Observar elementos para animaciones
-        document.querySelectorAll('.propuesta-card, .section-title, .registro-form').forEach(el => {
+        document.querySelectorAll('.propuesta-card, .section-title, .registro-form, .principio-card').forEach(el => {
             observer.observe(el);
         });
 
